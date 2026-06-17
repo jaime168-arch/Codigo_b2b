@@ -66,3 +66,13 @@ def main():
     if not contatos:
         logging.warning("Nenhum contato encontrado ou erro na busca.")
         return
+
+        logging.info(f"Encontrado(s) {len(contatos)} contato(s). Iniciando envios...")
+
+        for contato in contatos:
+            nome = contato.get(nome, telefone)
+        else:
+            logging.warning(f"Contato com dados incompletos ignorado: {contato}")
+
+    if __name__ == "__main__":
+        main()
