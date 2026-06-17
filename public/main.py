@@ -18,3 +18,10 @@ SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 ZAPI_INSTANCE = os.getenv("ZAPI_INSTANCE")
 ZAPI_TOKEN = os.getenv("ZAPI_TOKEN")
 
+# Validação simples das variáveis
+if not all([SUPABASE_URL, SUPABASE_KEY, ZAPI_INSTANCE, ZAPI_TOKEN]):
+    logging.error("Erro: Variáveis de ambiente ausentes. Por favor verifique o arquivo .env")
+    exit(1)
+
+# Initialize Supabase Client
+
