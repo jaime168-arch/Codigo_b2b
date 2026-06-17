@@ -10,3 +10,11 @@ Crie uma tabela chamada `contatos` com as seguintes colunas:
 - `telefone` (text) -> Exemplo de formato: `+55(21)99637-7469`
 
 ## Variáveis de ambiente
+
+Crie um arquivo `.env` na raiz do projeto com a seguinte estrutura:
+
+```env
+SUPABASE_URL=[https://Codigo_b2b.supabase.co](https://Codigo_b2b.supabase.co)
+SUPABASE_KEY=minha-api-key-do-supabase
+ZAPI_INSTANCE=minha-instancia-zapi
+ZAPI_TOKEN=meu-token-zapi
