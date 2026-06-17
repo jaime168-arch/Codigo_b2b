@@ -10,3 +10,11 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
+# Carrega as variáveis de ambiente do arquivo .env
+load_dotenv()
+
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+ZAPI_INSTANCE = os.getenv("ZAPI_INSTANCE")
+ZAPI_TOKEN = os.getenv("ZAPI_TOKEN")
+
